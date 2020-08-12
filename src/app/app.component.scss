@@ -117,3 +117,11 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+ion-header ion-toolbar ion-menu-button{
+  --color: red;
+}
+ion-header ion-toolbar{
+  --background: blue;
+  --color: white;
+}

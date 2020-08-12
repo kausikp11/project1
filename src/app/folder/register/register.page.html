@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registerForm">
+    <ion-label>First Name</ion-label>
+    <ion-input formControlName="firstname" type="text"></ion-input>
+    <ion-label>Last Name</ion-label>
+    <ion-input formControlName="lastname" type="text"></ion-input>
+    <ion-label>Email</ion-label>
+    <ion-input formControlName="email" type="email"></ion-input>
+    <ion-label>Password</ion-label>
+    <ion-input formControlName="password" type="password"></ion-input>
+    <ion-button [disabled]="!registerForm.valid" (click)="showConfirm()" expand="block" type="submit">Submit</ion-button>
+  </form>
+</ion-content>
